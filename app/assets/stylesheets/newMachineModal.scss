@@ -1,0 +1,23 @@
+@import	'alertSidebar.scss';
+
+.newMachineModal {
+	@extend .alertsModal;
+	height: 200px;
+}
+
+.newMachineEntry {
+	@extend .modalThresholdText;
+	margin-top: 50px;
+	text-align: right;
+	width: 150px !important;
+}
+
+.uuidEntryField {
+	width: 300px;
+}
+
+#newMachineSubmit {
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}

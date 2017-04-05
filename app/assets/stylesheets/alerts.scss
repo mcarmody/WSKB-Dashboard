@@ -1,0 +1,64 @@
+@import 'application.scss';
+
+.columnHeaders {
+	display: block;
+	font-weight: 700;
+	height: 35px;
+	margin-left: -55px;
+	padding-left: 55px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid $border-color;
+
+	div {
+		display: inline-block;
+		width: 150px;
+		color: black;
+	}
+}
+
+.elementRow{
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: $primary-subheader-color;
+
+	div {
+		display: inline-block;
+		width: 150px;
+		font-size: 12pt;
+	}
+}
+
+#alertButton {
+	width: 56px;
+}
+
+#editButton {
+	width: 30px;
+}
+
+.detailTable {
+	padding: 5px 5px 0px 15px;
+	color: $primary-subheader-color;
+
+	.elementRow {
+	}
+}
+
+.highlighted {
+	background-color: lighten(teal, 10%);
+}
+
+
+.alertLink {
+	text-decoration: underline;
+	color: $link-color;
+	cursor: pointer;
+}
+
+#addMachineButton {
+	@extend .primaryButton;
+	width: inherit;
+	padding: 2px 5px;
+	font-weight: 300;
+}

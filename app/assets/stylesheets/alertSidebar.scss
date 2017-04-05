@@ -1,0 +1,83 @@
+@import 'application.scss';
+@import 'editMenu.scss';
+
+.alertsModal {
+	position: absolute;
+	margin-left: -250px;
+	margin-right: -250px;
+	top: 200px;
+	height: 500px;
+	left: 50%;
+	display: none;
+	width: 500px;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	z-index: 3;
+	background-color: white;
+	padding: 15px;
+	box-shadow: 0 0 10px black;
+
+	.alertsSubheader {
+		display: inline-block;
+		position: relative;
+		font-style: italic;
+		margin-bottom: 10px;
+		width: 100%;
+		margin-right: 10px;
+	}
+
+	.modalThresholdText {
+		display: inline-block;
+		position: relative;
+		font-style: italic;
+		margin-bottom: 10px;
+		width: 220px;
+		margin-right: 10px;
+		color: $primary-font-color;
+	}
+
+	.currentTemp {
+		display: inline-block;
+		font-style: italic;
+		position: relative;
+		color: $primary-font-color;
+	}
+
+	.modalHeader {
+		font-size: 24pt;
+		font-weight: 700;
+		margin-bottom: 0px;
+		width: 100%;
+		float: left;
+	}
+
+	.alertsDetail {
+		overflow: auto;
+		position: relative;
+		height: 400px;
+		border-top: 1px solid $border-color;
+		padding-top: 5px;
+		
+		.singleAlertDate {
+			font-weight: 600;
+			display: inline-block;
+			width: 200px;
+			margin-bottom: 3px;
+		}
+
+		.singleAlertTemp {
+			display: inline-block;
+			width: 200px;
+			font-style: italic;
+		}
+	}
+
+
+
+	.closeModal {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		cursor: pointer;
+	}
+};

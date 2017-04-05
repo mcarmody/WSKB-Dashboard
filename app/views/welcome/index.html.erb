@@ -1,0 +1,148 @@
+
+<div class="titleBar">
+	<div class="pageTitle">
+		<i class="fa fa-list-alt" aria-hidden="true"></i>
+		Alerts
+	</div>
+</div>
+
+<div class="modalOverlay"></div>
+
+<!-- below will be the side navbar -->
+<div class="sidebar">
+	<div class="topLogo">
+		<i class="fa fa-battery-half" aria-hidden="true"></i>
+		<p class="logoSmallText">EMOTIONAL</p>
+		<p class="logoBigText">insights</p>
+	</div>
+
+	<!-- begin the nav menu -->
+
+	<div class="navMenu">
+		<div class="navItem">
+			<a class="navLink">
+				<i class="fa fa-laptop" aria-hidden="true"></i>
+				Machines
+			</a>
+		</div>
+		<div class="navItem">
+			<a class="navLink">
+				<i class="fa fa-bar-chart" aria-hidden="true"></i>
+				Details
+			</a>
+		</div>
+		<div class="navItem">
+			<a class="navLink">
+				<i class="fa fa-exclamation-circle alert-notice" aria-hidden="true"></i>
+				Alerts
+			</a>
+		</div>
+		<div class="navItem">
+			<a class="navLink"><i class="fa fa-table " aria-hidden="true"></i>
+				Logbook
+			</a>
+		</div>
+		<div class="navItem">
+			<a class="navLink"><i class="fa fa-book " aria-hidden="true"></i>
+				Reports
+			</a>
+		</div>
+	</div>
+
+	<!-- end the nav menu -->
+
+	<!-- begin the settings menu -->
+
+	<div class="settingsMenu">
+		<div class="settingsItem">
+			<a class="settingsLink">Admin</a>
+		</div>
+		<div class="settingsItem">
+			<a class="settingsLink">Account</a>
+		</div>
+		<div class="settingsItem">
+			<a class="settingsLink">Setup</a>
+		</div>
+		<div class="settingsItem">
+			<a class="settingsLink">Support</a>
+		</div>
+		<div class="settingsItem">
+			<a class="settingsLink">Sign Out</a>
+		</div>
+	</div>
+</div>
+<!-- end the sidebar -->
+
+<!-- main page container stuff below here -->
+<div class="container">
+	<div class="detailTable">
+		<div class="columnHeaders">
+			<div class="elementName">Element</div>
+			<div class="lastUpdate">Last Updated</div>
+			<div class="highAlerts">High Alerts</div>
+			<div class="lowAlerts">Low Alerts</div>
+			<div class="elementDatum">Data (°C)</div>
+			<div class="primaryButton" id="addMachineButton">Add Machine  <i class="fa fa-plus" aria-hidden="true"></i></div>
+		</div>
+		<div class="elementRow">
+			<div class="elementName"></div>
+			<div class="lastUpdate"></div>
+			<div class="highAlerts alertText"></div>
+			<div class="lowAlerts alertText"></div>
+			<div class="elementDatum"></div>
+			<div class="primaryButton" id = "alertButton">Refresh</div>
+			<div class="primaryButton" id = "editButton">Edit</div>
+		</div>	
+	</div>
+
+	<div class="detailTable hidden">
+		<tr class="columnHeaders">
+			<td class="elementName"></td>
+			<td class="lastUpdate"></td>
+			<td class="elementAlerts"></td>
+			<td class="elementGraphs"></td>
+			<td class="elementDatum"></td>
+			<td class="elementDatum"></td>
+		</tr>
+		<tr class="elementRow">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+	</div>
+
+</div>
+
+<div class="editMenu">
+	<div class="editHeader">Edit Alerts</div>
+	<div class="editSubheader">Alert Details</div>
+	<div class="tempAlertsEdit">
+		<p class="highTempTitle">High Threshold:</p>
+		<input class="highTempInput inputBox"></input>
+		<p class="lowTempTitle">Low Threshold:</p>
+		<input class="lowTempInput inputBox"></input>
+		<div class="primaryButton" id="updateTempButton">Update</div>
+		<div class="successMessage">Successful!</div>
+		<div class="hideButton"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="modal alertsModal">
+	<div class="modalHeader" id="alertsHeader"></div>
+	<div class="alertsSubheader">Alerts Log</div>
+	<div class="closeModal"><i class="fa fa-times" aria-hidden="true"></i></div>
+	<div class="modalThresholdText"></div>
+	<div class="currentTemp"></div>
+	<div class="alertsDetail"></div>
+</div>
+
+<div class="modal newMachineModal">
+	<div class="modalHeader">New Machine Entry</div>
+	<div class="newMachineEntry">New Machine UUID:</div>
+	<input class="uuidEntryField inputBox" placeholder = "abcdefg-1234-5678-9012-abcdefghijlk"></input>
+	<div class="primaryButton" id="newMachineSubmit">Add This Machine</div>
+	<div class="closeModal"><i class="fa fa-times" aria-hidden="true"></i></div>
+</div>
